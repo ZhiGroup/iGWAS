@@ -1,5 +1,5 @@
 # iGWAS
-iGWAS is a framework for extrating phenotypes from images and doing GWAS.
+iGWAS is a framework for extracting phenotypes from images and doing GWAS.
 
 ## Walkthrough
 The code for training segmentation network is at `segmentation`.
