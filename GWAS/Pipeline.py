@@ -25,7 +25,7 @@ bolt_path = ""
 LD_score_path = ""
 hg19_path = ""
 p = "P_BOLT_LMM_INF"
-LDlink_token = "114f40477521"
+LDlink_token = ""
 WINDOW_SIZE = 200000
 
 
