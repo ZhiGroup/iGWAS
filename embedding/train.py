@@ -16,11 +16,6 @@ from glob import glob
 
 class MyDataset(Dataset):
     def __init__(self, tsfm, h5_file='precomputed.h5', lim=40000):
-        '''
-        pattern_dict contains "img", "mask" and other data attributes as keys,
-        and has correspoinding regular expression pattern and
-        processing function as values.
-        '''
         self.f = h5py.File(h5_file, 'r')
         self.lim = lim
         df1 = pandas.read_csv('trainLabels.csv')
