@@ -117,7 +117,7 @@ def prepare_datasets(datasets, target_hdf5):
                 mean_mask = combine_mask(mask_dict[im_id])
                 im = cv2.imread(img_dict[im_id][0])
                 im, mean_mask, ratios = crop_im_by_circle(im, mean_mask)
-                if im:
+                if im is not None:
                     im = im_resize(im, (512, 512), 1) * 255
                     ccs += (im - 128).sum((0, 1))/2**18
                     ccss += ((im - 128)**2).sum((0, 1))/2**18
