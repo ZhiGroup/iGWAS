@@ -5,11 +5,6 @@ import numpy as np
 
 class MyDataset(Dataset):
     def __init__(self, h5_file_handle, transform):
-        '''
-        pattern_dict contains "img", "mask" and other data attributes as keys,
-        and has correspoinding regular expression pattern and
-        processing function as values.
-        '''
         self.data = h5_file_handle
         self.im_ids = list(h5_file_handle.keys())
         self.transform = transform
